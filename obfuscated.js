@@ -3,6 +3,8 @@ let y = 0;
 let spacing
 let circleSize= 300
 
+let _bgArray = ['100,155']
+
 
 function setup() {  
     spacing = random(5,60) 
@@ -19,7 +21,7 @@ function setup() {
 
 function draw() {
     backgroundDeterminant = random(1);
-    for(i=0;i<2550;i++){
+    for(i=0;i<floor(random(400,600));i++){
         
         if(backgroundDeterminant<0.20){
             strokeWeight(random(1,7))
